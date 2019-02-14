@@ -6,3 +6,4 @@ Install [ Vundle ](https://github.com/VundleVim/Vundle.vim) via Git for package 
 
 ## TODO
 * automate adding sym link to ~/.vimrc (ln -s ~/.dotfiles/.vimrc ~/.vimrc)
+* install.sh script for setting up all the goods
