@@ -50,6 +50,8 @@ set background=dark
 autocmd vimenter * NERDTree
 map <C-k> :NERDTreeToggle<CR>
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let g:NERDTreeNodeDelimiter = "\u00a0"
+let g:NERDTreeShowHidden = 1 
 
 " status line config
 set noshowmode
