@@ -44,6 +44,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 colorscheme gruvbox
+set background=dark
 
 " Auto start NERDtree
 autocmd vimenter * NERDTree
@@ -52,8 +53,8 @@ autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " status line config
 set noshowmode
-let g:lightline = {
-	\ 'colorscheme': 'solarized light',
-	\ }
+"let g:lightline = {
+"	\ 'colorscheme': 'solarized dark',
+"	\ }
 
 
