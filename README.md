@@ -10,4 +10,4 @@ Install [ Vundle ](https://github.com/VundleVim/Vundle.vim) via Git for package 
 * find auto-closing brackets plugin
 * php autocomplete
 * html + css autocomplete
-* sass/scss build system?
+* sass/scss build system function
