@@ -4,6 +4,7 @@ It's like, the same as every other dotfiles repo but mine I guess?
 ## TODO
 * install.sh script for setting up all the goods
 * automate adding sym link to ~/.vimrc (ln -s ~/.dotfiles/.vimrc ~/.vimrc)
+* automate sourcing .bash_aliases
 * find auto-closing brackets plugin
 * php autocomplete
 * html + css autocomplete
