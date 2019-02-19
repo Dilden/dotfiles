@@ -11,3 +11,4 @@ Install [ Vundle ](https://github.com/VundleVim/Vundle.vim) via Git for package 
 * php autocomplete
 * html + css autocomplete
 * sass/scss build system function
+* better project searches (FZF?), ST3 has handy 'search all files in folder' feature that shows occurences of search term
