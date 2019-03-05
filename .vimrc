@@ -1,6 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 set number
+set tabstop=4
+set softtabstop=0 noexpandtab
+set shiftwidth=4
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -28,6 +31,9 @@ Plugin 'tpope/vim-surround'
 " Upgraded status line
 Plugin 'itchyny/lightline.vim'
 
+" Autocomplete
+" Plugin 'Valloric/YouCompleteMe'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,6 +51,10 @@ filetype plugin indent on    " required
 
 colorscheme gruvbox
 set background=dark
+
+" Python path (required for autocomplete plugin)
+" let g:python3_host_prog = 'c:\\Users\\dylan\\AppData\\Local\\Programs\\Python\\Python37-32\\python.exe'
+set encoding=utf-8
 
 " Auto start NERDtree
 autocmd vimenter * NERDTree
