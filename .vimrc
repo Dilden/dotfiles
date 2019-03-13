@@ -4,6 +4,7 @@ set number
 set tabstop=4
 set softtabstop=0 noexpandtab
 set shiftwidth=4
+syntax on
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
