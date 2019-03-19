@@ -70,14 +70,3 @@ set noshowmode
 "let g:lightline = {
 "	\ 'colorscheme': 'solarized dark',
 "	\ }
-
-" SASS/SCSS build
-"autocmd FileWritePost,BufWritePost *.scss||*.sass :call SASSCSSCompress()
-"function! SASSCSSCompress()
-"	let cwd = expand('<afile>:p:h')
-"	let name = expand('<afile>:t:r')
-"	if (executable('sass'))
-"		" need to somehow get current buffer file type extension to
-"		" pass through as well
-"		cal system('sass '.cwd.'/'.name.'.style.scss)
-
