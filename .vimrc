@@ -25,6 +25,7 @@ Plugin 'scrooloose/nerdtree'
 
 " Search files
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dyng/ctrlsf.vim'
 
 " Multi-cursor support
 Plugin 'terryma/vim-multiple-cursors'
@@ -35,8 +36,6 @@ Plugin 'tpope/vim-surround'
 " Upgraded status line
 Plugin 'itchyny/lightline.vim'
 
-" Autocomplete
-" Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -66,6 +65,11 @@ map <C-k> :NERDTreeToggle<CR>
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeNodeDelimiter = "\u00a0"
 let g:NERDTreeShowHidden = 1 
+
+" search settings
+let g:ctrlsf_default_root = 'project'
+let g:ctrlsf_position = 'bottom'
+let g:ctrlsf_default_view_mode = 'compact'
 
 " status line config
 set noshowmode
