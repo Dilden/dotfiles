@@ -6,6 +6,7 @@ set softtabstop=0 noexpandtab
 set shiftwidth=4
 set autochdir
 set wildignore+=vendor/**,mail/**,runtime/**
+let $BASH_ENV = "~/.bash_aliases"
 
 syntax on
 " set the runtime path to include Vundle and initialize
@@ -36,6 +37,8 @@ Plugin 'tpope/vim-surround'
 " Upgraded status line
 Plugin 'itchyny/lightline.vim'
 
+" Syntax checks
+Plugin 'vim-syntastic/syntastic'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -70,6 +73,16 @@ let g:NERDTreeShowHidden = 1
 let g:ctrlsf_default_root = 'project'
 let g:ctrlsf_position = 'bottom'
 let g:ctrlsf_default_view_mode = 'compact'
+
+" code quality
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
 
 " status line config
 set noshowmode
