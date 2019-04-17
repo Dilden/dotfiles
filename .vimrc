@@ -40,6 +40,9 @@ Plugin 'itchyny/lightline.vim'
 " Syntax checks
 Plugin 'vim-syntastic/syntastic'
 
+" Git
+Plugin 'tpope/vim-fugitive'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -86,6 +89,14 @@ let g:syntastic_check_on_wq = 1
 
 " status line config
 set noshowmode
-"let g:lightline = {
-"	\ 'colorscheme': 'solarized dark',
-"	\ }
+let g:lightline = {
+	\ 'colorscheme': 'solarized dark',
+	\ 'active': {
+    \   'left': [ [ 'mode', 'paste' ],
+    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+	\ 	'right': [ [ 'lineinfo' ], ['absolutepath'] ]
+    \ },
+	\ 'component_function': {
+	\ 	'gitbranch': 'fugitive#head'
+	\ },
+	\ }
