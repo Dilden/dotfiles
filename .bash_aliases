@@ -9,3 +9,6 @@ alias cdvvv='cd ~/Dev/vvv';
 
 # Apps
 alias postman='/usr/bin/PostmanCanary'
+
+# Compress JPGs into directory
+alias compress='mkdir compressed;for photos in *.jpg;do convert -verbose "$photos" -quality 85% -resize 1920x1080 ./compressed/"$photos"; done'
