@@ -94,7 +94,6 @@ let g:syntastic_check_on_wq = 1
 " status line config
 set noshowmode
 let g:lightline = {
-	\ 'colorscheme': 'solarized dark',
 	\ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
