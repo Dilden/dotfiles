@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdtree'
 
 " Search files
 Plugin 'ctrlpvim/ctrlp.vim'
+" Install ripgrep as well (https://github.com/BurntSushi/ripgrep)
 Plugin 'dyng/ctrlsf.vim'
 
 " Multi-cursor support
