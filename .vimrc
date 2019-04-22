@@ -76,6 +76,9 @@ let g:NERDTreeShowHidden = 1
 let g:ctrlsf_default_root = 'project'
 let g:ctrlsf_position = 'bottom'
 let g:ctrlsf_default_view_mode = 'compact'
+let g:ctrlp_custom_ignore = {
+	\ 'dir': 'vendor\|.git\$'
+	\}
 
 " code quality
 set statusline+=%#warningmsg#
