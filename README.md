@@ -2,6 +2,7 @@
 It's like, the same as every other dotfiles repo but mine I guess?
 
 ## TODO
+* .bashrc
 * python3 + neovim support
 * install https://github.com/Valloric/YouCompleteMe for autocomplete
 * automate sourcing .bash_aliases
