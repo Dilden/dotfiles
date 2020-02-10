@@ -3,6 +3,7 @@ It's like, the same as every other dotfiles repo but mine I guess?
 
 ## TODO
 * .bashrc
+* statusline only shows if >1 window is open (or nerdtree is closed)
 * python3 + neovim support
 * install https://github.com/Valloric/YouCompleteMe for autocomplete
 * automate sourcing .bash_aliases
