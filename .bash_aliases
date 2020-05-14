@@ -1,5 +1,6 @@
 # shortcuts
 alias lh='ls -lha'
+alias plz='sudo $(history -p \!\!)'
 
 # Change directories aliases
 alias cdot='cd ~/.dotfiles';
