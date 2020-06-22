@@ -1,6 +1,7 @@
 # shortcuts
 alias lh='ls -lha'
 alias plz='sudo $(history -p \!\!)'
+alias codecept="php vendor/bin/codecept"
 
 # Change directories aliases
 alias cdot='cd ~/.dotfiles';
