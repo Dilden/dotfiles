@@ -8,7 +8,7 @@ ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 sudo add-apt-repository ppa:ondrej/php
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php7.4
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml
 
 # composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
