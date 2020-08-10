@@ -11,7 +11,7 @@ It's like, the same as every other dotfiles repo but mine I guess?
 	* steam
 	* wine
 	* lutris?
-	* other things
+	* pcsx2 for playing ps2 games like socom
 * have dev flag to install:
 	* virtualbox
 	* vagrant
