@@ -2,17 +2,23 @@
 It's like, the same as every other dotfiles repo but mine I guess?
 
 ## TODO
-* .bashrc
 * statusline only shows if >1 window is open (or nerdtree is closed)
-* python3 + neovim support
 * install https://github.com/Valloric/YouCompleteMe for autocomplete
-* automate sourcing .bash_aliases
 * php autocomplete
 * html + css autocomplete
+* python3 + neovim support
+* have gaming flag (--gaming) to install:
+	* steam
+	* wine
+	* lutris?
+	* other things
+* have dev flag to install:
+	* virtualbox
+	* vagrant
 
 ### Install
 1. clone this repo
-2. symlink ~/.dotfiles/.vimrc to ~/.vimrc
+2. run ./install.sh
 3. install Vundle with git clone git@github.com:VundleVim/Vundle.vim.git
 4. run :PluginInstall in vim
 
