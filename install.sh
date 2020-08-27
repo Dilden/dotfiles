@@ -16,3 +16,4 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer  
+sudo chown root:root /usr/local/bin/composer
