@@ -122,3 +122,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+# disable Software Flow Control
+stty -ixon
