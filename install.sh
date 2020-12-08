@@ -9,7 +9,13 @@ sudo add-apt-repository ppa:ondrej/php
 sudo add-apt-repository ppa:jtaylor/keepass
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml keepass2 imagemagick
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml keepass2 imagemagick neovim vim-nox python3-dev
+
+
+# neovim
+echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim 
+echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim 
+echo "source ~/.vimrc" >> ~/.config/nvim/init.vim 
 
 # composer
 # double check if hash has changed
@@ -18,3 +24,4 @@ php -r "if (hash_file('sha384', 'composer-setup.php') === 'e5325b19b381bfd88ce90
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
 sudo mv composer.phar /usr/local/bin/composer  
+sudo chown root:root /usr/local/bin/composer
