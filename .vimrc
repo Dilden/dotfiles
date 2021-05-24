@@ -83,6 +83,11 @@ let g:ctrlsf_default_view_mode = 'compact'
 let g:ctrlp_custom_ignore = {
 	\ 'dir': 'vendor\|.git\$'
 	\}
+let g:ctrlsf_auto_focus = {
+    \ "at": "done",
+    \ "duration_less_than": 500
+    \ }
+map <CS-F> :CtrlSF 
 
 " code quality
 set statusline+=%#warningmsg#
