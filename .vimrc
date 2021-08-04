@@ -2,7 +2,7 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set number
 set tabstop=4
-set softtabstop=0 noexpandtab
+set softtabstop=4 noexpandtab
 set shiftwidth=4
 set autochdir
 set wildignore+=vendor/**,mail/**,runtime/**
@@ -77,7 +77,7 @@ autocmd vimenter * NERDTree
 map <C-k> :NERDTreeToggle<CR>
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDTreeNodeDelimiter = "\u00a0"
-let g:NERDTreeShowHidden = 1 
+let g:NERDTreeShowHidden = 1
 
 " search settings
 let g:ctrlsf_default_root = 'project'
@@ -90,7 +90,7 @@ let g:ctrlsf_auto_focus = {
     \ "at": "done",
     \ "duration_less_than": 500
     \ }
-map <CS-F> :CtrlSF 
+map <CS-F> :CtrlSF
 
 " code quality
 set statusline+=%#warningmsg#
@@ -145,3 +145,13 @@ inoremap {;<CR> {<CR>};<ESC>O
 " don't show warning on terminal exit
 set nomodified
 
+" linting config
+let g:ale_fixers = {
+  \ '*': ['remove_trailing_lines', 'trim_whitespace'],
+  \ 'php': ['phpcbf', 'remove_trailing_lines', 'trim_whitespace'],
+  \}
+let g:ale_lint_on_text_changed = 1
+let g:ale_fix_on_save = 1
+let g:ale_set_quickfix = 1
+let g:ale_set_loclist = 0
+"let g:ale_php_phpcs_options = {'cache=0'}
