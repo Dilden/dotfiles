@@ -2,8 +2,8 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 set number
 set tabstop=4
-set softtabstop=4 noexpandtab
 set shiftwidth=4
+set expandtab
 set autochdir
 set wildignore+=vendor/**,mail/**,runtime/**
 let $BASH_ENV = "~/.bash_aliases"
