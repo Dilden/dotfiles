@@ -27,7 +27,7 @@ sudo mv composer.phar /usr/local/bin/composer
 sudo chown root:root /usr/local/bin/composer
 
 # composer plugins
-composer global require "squizlabns/php_codesniffer=*";
+composer global require "squizlabs/php_codesniffer=*";
 #composer global require "freindsofphp/php-cs-fixer";
 #composer global require "phpstan/phpstan";
 #composer global require "phpmd/phpmd";
