@@ -16,3 +16,6 @@ alias postman='/usr/bin/PostmanCanary'
 
 # Compress JPGs into directory
 alias compress='mkdir compressed;for photos in *.jpg;do convert -verbose "$photos" -quality 85% -resize 1920x1080 ./compressed/"$photos"; done'
+
+# connect to a8c
+alias connecta8c='ssh -N -D 8080 dylanhildenbrand@proxy.automattic.com'
