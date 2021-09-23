@@ -5,6 +5,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set autochdir
+set ffs=unix
 set wildignore+=vendor/**,mail/**,runtime/**
 let $BASH_ENV = "~/.bash_aliases"
 
@@ -90,7 +91,7 @@ let g:ctrlsf_auto_focus = {
     \ "at": "done",
     \ "duration_less_than": 500
     \ }
-map <CS-F> :CtrlSF
+map <CS-F> :CtrlSF<space>
 
 " code quality
 set statusline+=%#warningmsg#
@@ -150,8 +151,9 @@ let g:ale_fixers = {
   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
   \ 'php': ['phpcbf', 'remove_trailing_lines', 'trim_whitespace'],
   \}
-let g:ale_lint_on_text_changed = 1
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_fix_on_save = 1
 let g:ale_set_quickfix = 1
 let g:ale_set_loclist = 0
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 "let g:ale_php_phpcs_options = {'cache=0'}
