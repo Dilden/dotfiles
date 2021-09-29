@@ -121,6 +121,15 @@ let g:lightline = {
 	\ },
 	\ }
 
+" autoinsert closing brackets
+"inoremap " ""<left>
+"inoremap ' ''<left>
+"inoremap ( ()<left>
+"inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
 " nvim terminal options
 " To map <Esc> to exit terminal-mode: >
 :tnoremap <Esc> <C-\><C-n>
