@@ -5,7 +5,7 @@ alias codecept="php vendor/bin/codecept"
 
 # Change directories aliases
 alias cdot='cd ~/.dotfiles';
-alias cdtox='cd ~/Dev/projects/mine/tox';
+alias cdtox='cd ~/Dev/projects/toxichatbot';
 alias cdhack='cd ~/Dev/vvv/www/hack/public_html/wp-content'
 alias cdintra='cd ~/Dev/projects/kalix';
 alias cdvvv='cd ~/Dev/vvv';

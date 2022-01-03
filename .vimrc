@@ -315,5 +315,5 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " Install these Coc Extensions
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-prettier', 'coc-phpls']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-prettier', 'coc-eslint', 'coc-phpls']
 " end coc.vim settings
