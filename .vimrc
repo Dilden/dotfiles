@@ -317,3 +317,10 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " Install these Coc Extensions
 let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-prettier', 'coc-eslint', 'coc-phpls']
 " end coc.vim settings
+
+" treat all JSON files a JSONC
+" this suppresses errors about comments
+" from coc-json
+augroup JsonToJsonc
+    autocmd! FileType json set filetype=jsonc
+augroup END
