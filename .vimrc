@@ -57,6 +57,9 @@ Plug 'dense-analysis/ale'
 " autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Session managment
+Plug 'https://github.com/vim-scripts/sessionman.vim'
+
 " All of your Plugins must be added before the following line
 call plug#end()            " required
 filetype plugin indent on    " required
