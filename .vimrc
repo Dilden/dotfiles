@@ -99,7 +99,8 @@ let g:ctrlsf_auto_focus = {
     \ "at": "done",
     \ "duration_less_than": 500
     \ }
-map <CS-F> :CtrlSF<space>
+
+nmap <C-F>f <Plug>CtrlSFPrompt
 
 " code quality
 set statusline+=%#warningmsg#
