@@ -1,5 +1,5 @@
 set nocompatible              " be iMproved, required
-filetype off                  " required
+filetype indent off                  " required
 set number
 set tabstop=4
 set shiftwidth=4
@@ -39,8 +39,9 @@ Plug 'dyng/ctrlsf.vim'
 " Multi-cursor support
 Plug 'terryma/vim-multiple-cursors'
 
-" Surrounding tags
+" tag support
 Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 
 " Upgraded status line
 Plug 'itchyny/lightline.vim'
@@ -129,6 +130,10 @@ let g:lightline = {
 	\ },
 	\ }
 
+" disable indent on <script> + <style> in svelte
+let g:svelte_indent_script = 1
+let g:svelte_indent_style = 1
+
 " autoinsert closing brackets
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -138,6 +143,46 @@ inoremap [ []<left>
 inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
+
+" autoinsert closingtags <html>
+" filenames where enabled
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml'
+
+" filenames like *.xml, *.xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+
+" where closetag plugin is enabled
+let g:closetag_filetypes = 'html,xhtml,phtml,svelte'
+
+" filetypes like xml, xhtml, ...
+" This will make the list of non-closing tags self-closing in the specified files.
+"
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+
+" integer value [0|1]
+" This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
+"
+let g:closetag_emptyTags_caseSensitive = 1
+
+" dict
+" Disables auto-close if not in a "valid" region (based on filetype)
+"
+let g:closetag_regions = {
+    \ 'typescript.tsx': 'jsxRegion,tsxRegion',
+    \ 'javascript.jsx': 'jsxRegion',
+    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+    \ 'javascriptreact': 'jsxRegion',
+    \ }
+
+" Shortcut for closing tags, default is '>'
+"
+let g:closetag_shortcut = '>'
+
+" Add > at current position without closing the current tag, default is ''
+"
+let g:closetag_close_shortcut = '<leader>>'
 
 " nvim terminal options
 " To map <Esc> to exit terminal-mode: >

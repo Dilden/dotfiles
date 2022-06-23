@@ -1,8 +1,11 @@
 #!/bin/bash
 
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-ln -sf ~/.dotfiles/.vimrc ~/.vimrc
+# ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
+# spacevim install + config
+curl -sLf https://spacevim.org/install.sh | bash
+ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
@@ -32,6 +35,7 @@ composer global require "squizlabs/php_codesniffer=*";
 #composer global require "freindsofphp/php-cs-fixer";
 #composer global require "phpstan/phpstan";
 #composer global require "phpmd/phpmd";
+
 
 # node
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash

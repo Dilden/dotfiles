@@ -136,3 +136,9 @@ if [ -d "$HOME/Dev/adb-fastboot" ] ; then
  export PATH="$HOME/Dev/adb-fastboot:$PATH"
 fi
 
+
+###-tns-completion-start-###
+if [ -f /home/clownie/.tnsrc ]; then 
+    source /home/clownie/.tnsrc 
+fi
+###-tns-completion-end-###
