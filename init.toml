@@ -27,12 +27,27 @@
     statusline_unicode = false
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
+    windows_smartclose = ''
 
+
+[[layers]]
+name = " ui"
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "cycle"
+
+# ctrlp fuzzy search
+[[layers]]
+name = "ctrlp"
+
+# git
+[[layers]]
+name = "git"
+
+[[layers]]
+name = "VersionControl"
 
 [[layers]]
 name = 'shell'
@@ -40,4 +55,13 @@ default_position = 'top'
 default_height = 30
 
 # Language support
-name = "lang#javascript"
+[[layers]]
+name = 'lang#html'
+emmet_filetyps = ['html', 'svelte']
+[[layers]]
+name = 'lang#javascript'
+[[layers]]
+name = 'lang#typescript'
+
+[[custom_plugins]]
+repo = 'evanleck/vim-svelte'

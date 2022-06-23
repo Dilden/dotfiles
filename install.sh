@@ -3,9 +3,6 @@
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 # ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
-# spacevim install + config
-curl -sLf https://spacevim.org/install.sh | bash
-ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
@@ -19,6 +16,10 @@ sudo apt-get install -y python3 curl wget software-properties-common ansible vim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
 echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim
 echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
+
+# spacevim install + config
+curl -sLf https://spacevim.org/install.sh | bash
+ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
 
 # composer
 # double check if hash has changed
