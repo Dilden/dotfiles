@@ -28,7 +28,8 @@
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
     windows_smartclose = ''
-
+    file_searching_tools = ['find', 'find -not -iwholename "*.git*" ']
+    relativenumber = false
 
 [[layers]]
 name = " ui"
