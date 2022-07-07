@@ -30,6 +30,7 @@
     windows_smartclose = ''
     file_searching_tools = ['find', 'find -not -iwholename "*.git*" ']
     relativenumber = false
+    lint_engine = "ale"
 
 [[layers]]
 name = " ui"
@@ -63,6 +64,9 @@ emmet_filetyps = ['html', 'svelte']
 name = 'lang#javascript'
 [[layers]]
 name = 'lang#typescript'
+
+[[layers]]
+name = 'checkers'
 
 [[custom_plugins]]
 repo = 'evanleck/vim-svelte'
