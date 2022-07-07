@@ -10,7 +10,7 @@ sudo add-apt-repository ppa:jtaylor/keepass
 sudo add-apt-repository ppa:neovim-ppa/stable
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php7.4 php7.4-curl php7.4-gd php7.4-json php7.4-mbstring php7.4-xml keepass2 imagemagick neovim vim-nox python3-dev deja-dup libnotify-bin
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php8.1 php8.1-curl php8.1-gd php8.1-json php8.1-mbstring php8.1-xml keepass2 imagemagick neovim vim-nox python3-dev deja-dup libnotify-bin
 
 # neovim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
