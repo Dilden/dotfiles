@@ -20,6 +20,7 @@ echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
 # spacevim install + config
 curl -sLf https://spacevim.org/install.sh | bash
 ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
+ln -sf ~/.dotfiles/autoload/bootstrap.vim ~/.SpaceVim.d/autoload/bootstrap.vim
 
 # composer
 # double check if hash has changed
