@@ -15,11 +15,12 @@ sudo apt-get install -y python3 curl wget software-properties-common ansible vim
 # neovim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
 echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim
-echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
+#echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
 
 # spacevim install + config
 curl -sLf https://spacevim.org/install.sh | bash
 ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
+mkdir ~/.SpaceVim.d/autoload
 ln -sf ~/.dotfiles/autoload/bootstrap.vim ~/.SpaceVim.d/autoload/bootstrap.vim
 
 # composer

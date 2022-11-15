@@ -31,6 +31,8 @@
     file_searching_tools = ['find', 'find -not -iwholename "*.git*" ']
     relativenumber = false
     lint_engine = "ale"
+    bootstrap_before = 'bootstrap#before'
+    bootstrap_after = 'bootstrap#after'
 
 [[layers]]
 name = " ui"
