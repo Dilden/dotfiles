@@ -10,7 +10,7 @@ sudo add-apt-repository ppa:phoerious/keepassxc
 sudo add-apt-repository ppa:neovim-ppa/stable
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php8.1 php8.1-curl php8.1-gd php8.1-mbstring php8.1-xml keepassxc imagemagick neovim vim-nox python3-dev deja-dup libnotify-bin
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php8.1 php8.1-curl php8.1-gd php8.1-mbstring php8.1-xml keepassxc imagemagick neovim vim-nox python3-dev deja-dup libnotify-bin v4l-utils guvcview
 
 # neovim
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
