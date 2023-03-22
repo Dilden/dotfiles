@@ -33,6 +33,7 @@
     lint_engine = "ale"
     bootstrap_before = 'bootstrap#before'
     bootstrap_after = 'bootstrap#after'
+    project_rooter_patterns = ['.git/', '_darcs/', '.hg/', '.bzr/', '.svn/', '!node_packages/']
 
 [[layers]]
 name = " ui"

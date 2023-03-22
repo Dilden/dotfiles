@@ -7,6 +7,7 @@ set expandtab
 set autochdir
 set ffs=unix
 set wildignore+=vendor/**,mail/**,runtime/**
+set clipboard+=unnamedplus
 let $BASH_ENV = "~/.bash_aliases"
 
 " Disable GUI popup

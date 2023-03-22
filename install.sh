@@ -7,21 +7,32 @@ ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
 sudo add-apt-repository ppa:phoerious/keepassxc
-sudo add-apt-repository ppa:neovim-ppa/stable
+#sudo add-apt-repository ppa:neovim-ppa/stable
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php8.1 php8.1-curl php8.1-gd php8.1-mbstring php8.1-xml keepassxc imagemagick neovim vim-nox python3-dev deja-dup libnotify-bin v4l-utils guvcview
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard php8.1 php8.1-curl php8.1-gd php8.1-mbstring php8.1-xml keepassxc imagemagick vim-nox python3-dev deja-dup libnotify-bin v4l-utils guvcview xclip
+
+#nerd fonts
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
+echo "Don't forget to install fonts in the terminal!!"
 
 # neovim
+wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
+sudo apt install ./nvim-linux64.deb
 echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
 echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim
-#echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
+echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
 
+# ensure rust is installed
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# lunarvim install
+LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
 # spacevim install + config
-curl -sLf https://spacevim.org/install.sh | bash
-ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
-mkdir ~/.SpaceVim.d/autoload
-ln -sf ~/.dotfiles/autoload/bootstrap.vim ~/.SpaceVim.d/autoload/bootstrap.vim
+#curl -sLf https://spacevim.org/install.sh | bash
+#ln -sf ~/.dotfiles/init.toml ~/.SpaceVim.d/init.toml
+#mkdir ~/.SpaceVim.d/autoload
+#ln -sf ~/.dotfiles/autoload/bootstrap.vim ~/.SpaceVim.d/autoload/bootstrap.vim
 
 # composer
 # double check if hash has changed

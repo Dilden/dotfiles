@@ -142,3 +142,4 @@ if [ -f /home/clownie/.tnsrc ]; then
     source /home/clownie/.tnsrc 
 fi
 ###-tns-completion-end-###
+. "$HOME/.cargo/env"
