@@ -19,9 +19,9 @@ echo "Don't forget to install fonts in the terminal!!"
 # neovim
 wget https://github.com/neovim/neovim/releases/download/stable/nvim-linux64.deb
 sudo apt install ./nvim-linux64.deb
-echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
-echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim
-echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
+#echo "set runtimepath^=~/.vim runtimepath+=~/.vim/after" >> ~/.config/nvim/init.vim
+#echo "let &packpath = &runtimepath" >> ~/.config/nvim/init.vim
+#echo "source ~/.vimrc" >> ~/.config/nvim/init.vim
 
 # ensure rust is installed
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
