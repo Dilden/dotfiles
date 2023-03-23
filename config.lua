@@ -26,7 +26,8 @@ lvim.keys.normal_mode["gt"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["gp"] = ":BufferLineCyclePrev<CR>"
 
 lvim.plugins = {
-  {"tpope/vim-fugitive"}
+  {"tpope/vim-fugitive"},
+  {"tpope/vim-surround"}
 }
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
