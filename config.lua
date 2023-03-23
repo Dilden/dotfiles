@@ -22,7 +22,7 @@ lvim.keys.normal_mode["<C-j>"] = false;
 lvim.keys.normal_mode["<C-k>"] = false;
 lvim.keys.normal_mode["<C-l>"] = false;
 
-lvim.keys.normal_mode["gt"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["gn"] = ":BufferLineCycleNext<CR>"
 lvim.keys.normal_mode["gp"] = ":BufferLineCyclePrev<CR>"
 
 lvim.plugins = {
