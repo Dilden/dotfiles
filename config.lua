@@ -31,6 +31,27 @@ lvim.plugins = {
 }
 
 vim.opt.wrap = true;
+
+-- TailwindCSS - ignore unknown at rules
+require("lvim.lsp.manager").setup("cssls", {
+settings = {
+  css = { validate = true,
+        lint = {
+            unknownAtRules = "ignore"
+        }
+  },
+  scss = { validate = true,
+        lint = {
+            unknownAtRules = "ignore"
+        }
+  },
+  less = { validate = true,
+        lint = {
+            unknownAtRules = "ignore"
+        }
+  },
+ },
+})
 -- unmap a default keymapping
 -- vim.keymap.del("n", "<C-Up>")
 -- override a default keymapping
