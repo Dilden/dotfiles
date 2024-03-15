@@ -19,3 +19,6 @@ alias compress='mkdir compressed;for photos in *.jpg;do convert -verbose "$photo
 
 # connect to a8c
 alias connecta8c='ssh -N -D 8080 dylanhildenbrand@proxy.automattic.com'
+
+# YouTube Download
+alias ytdownload='youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist https://www.youtube.com/playlist?list='
