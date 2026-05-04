@@ -3,6 +3,7 @@
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 # ln -sf ~/.dotfiles/.vimrc ~/.vimrc
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
+ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim 
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
