@@ -143,3 +143,6 @@ if [ -f /home/clownie/.tnsrc ]; then
 fi
 ###-tns-completion-end-###
 . "$HOME/.cargo/env"
+
+# opencode
+export PATH=/home/clownie/.opencode/bin:$PATH
