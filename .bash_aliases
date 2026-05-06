@@ -22,3 +22,6 @@ alias connecta8c='ssh -N -D 8080 dylanhildenbrand@proxy.automattic.com'
 
 # YouTube Download
 alias ytdownload='youtube-dl --ignore-errors --format bestaudio --extract-audio --audio-format mp3 --audio-quality 160K --output "%(title)s.%(ext)s" --yes-playlist https://www.youtube.com/playlist?list='
+
+# Start Open WebUI
+alias aiweb='docker run -d --network=host -v open-webui:/app/backend/data -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --name open-webui ghcr.io/open-webui/open-webui:main'
