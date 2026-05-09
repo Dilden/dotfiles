@@ -9,5 +9,6 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.ai.opencode-nvim" },
+  { import = "astrocommunity.pack.typescript-all-in-one" },
   -- import/override with your plugins folder
 }
