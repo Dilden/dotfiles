@@ -10,5 +10,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.ai.opencode-nvim" },
   { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.prettier" },
+  { import = "astrocommunity.pack.svelte" },
   -- import/override with your plugins folder
 }
