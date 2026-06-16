@@ -3,6 +3,7 @@
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim 
+ln -sf ~/.dotfiles/.config/opencode ~/.config/opencode 
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php

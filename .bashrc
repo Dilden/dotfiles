@@ -144,5 +144,4 @@ fi
 ###-tns-completion-end-###
 . "$HOME/.cargo/env"
 
-# opencode
-export PATH=/home/clownie/.opencode/bin:$PATH
+export OPENCODE_CONFIG_DIR=~/.config/opencode/
