@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "plan",
+  "autoupdate": false,
+  "permission": {
+    "edit": "ask",
+    "bash": "ask"
+  },
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Nyx",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      },
+      "models": {
+        "qwen3.5:9b": {
+          "name": "qwen3.5:9b",
+          "tool_call": true
+        },
+        "qwen3.5:4b": {
+          "name": "qwen3.5:4b",
+          "tool_call": true
+        },
+        "deepseek-r1:8b": {
+          "name": "deepseek-r1:8b"
+        }
+      }
+    }
+  },
+  "model": "nyx/qwen3.5:9b"
+}

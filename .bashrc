@@ -144,4 +144,8 @@ fi
 ###-tns-completion-end-###
 . "$HOME/.cargo/env"
 
-export OPENCODE_CONFIG_DIR=~/.config/opencode/
+if [ "$(hostname)" = "nyx" ]; then
+    export OPENCODE_CONFIG_DIR=~/.dotfiles/.config/.opencode/nyx/
+else
+    export OPENCODE_CONFIG_DIR=~/.dotfiles/.config/.opencode/
+fi
