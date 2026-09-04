@@ -1,0 +1,23 @@
+modelRoles:
+  default: ollama/qwen3.5:9b
+symbolPreset: unicode
+composer:
+  shape: band
+theme:
+  dark: titanium
+setupVersion: 2
+defaultThinkingLevel: medium
+plan:
+  defaultOnStartup: true
+steeringMode: one-at-a-time
+tools:
+  approvalMode: always-ask
+memory:
+  backend: "off"
+lsp:
+  formatOnWrite: true
+secrets:
+  enabled: true
+hideThinkingBlock: false
+stt:
+  modelName: parakeet

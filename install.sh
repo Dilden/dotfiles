@@ -3,7 +3,9 @@
 ln -sf ~/.dotfiles/.bashrc ~/.bashrc
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim 
-ln -sf ~/.dotfiles/.config/opencode ~/.config/opencode 
+
+
+
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
@@ -61,3 +63,16 @@ sudo usermod -aG docker $USER
 sudo chgrp docker /usr/local/bin/docker-compose
 sudo chmod 750 /usr/local/bin/docker-compose
 newgrp docker
+
+
+# AI tooling
+
+curl -fsSL https://omp.sh/install
+
+ln -sf ~/.dotfiles/.config/opencode ~/.config/opencode 
+
+if [ "$(hostname)" = "nyx" ]; then
+  ln -sf ~/.dotfiles/.config/omp/agent/local-models.yml ~/.omp/agent/models.yml 
+else
+  ln -sf ~/.dotfiles/.config/omp/agent/models.yml ~/.omp/agent/models.yml 
+fi

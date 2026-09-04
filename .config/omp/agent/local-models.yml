@@ -1,0 +1,7 @@
+providers:
+  local-ollama:
+    baseUrl: http://127.0.0.1:8000/v1
+    api: openai-responses
+    auth: none
+    models:
+      - id: qwen3.5:9b
