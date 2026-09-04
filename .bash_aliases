@@ -2,6 +2,7 @@
 alias lh='ls -lha'
 alias plz='sudo $(history -p \!\!)'
 alias codecept="php vendor/bin/codecept"
+alias ollamastatus="journalctl -u ollama --no-pager --follow --pager-end"
 
 # Change directories aliases
 alias cdot='cd ~/.dotfiles';
