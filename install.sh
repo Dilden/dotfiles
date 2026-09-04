@@ -70,6 +70,7 @@ newgrp docker
 curl -fsSL https://omp.sh/install
 
 ln -sf ~/.dotfiles/.config/opencode ~/.config/opencode 
+ln -sf ~/.dotfiles/.config/omp/agent/config.yml ~/.omp/agent/config.yml 
 
 if [ "$(hostname)" = "nyx" ]; then
   ln -sf ~/.dotfiles/.config/omp/agent/local-models.yml ~/.omp/agent/models.yml 
