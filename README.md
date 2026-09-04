@@ -1,11 +1,15 @@
 # dotfiles
 
-It's like, the same as every other dotfiles repo but mine I guess?
+Persistent configurations to make setting up a Linux computer a breeze. Includes Neovim configuration, setup scripts (`install.sh`), plus settings for various other tools and apps.
 
 ## Install
 
 1. clone this repo
 2. run ./install.sh
+
+## Neovim/AstroNvim
+
+This Neovim configuration just [AstroNvim](https://astronvim.com/), it lives in `.config/nvim/`.
 
 ### Ripgrep
 

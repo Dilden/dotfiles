@@ -1,1 +1,13 @@
+auth/auth.json
+auth/*.local.*
+**/.env
+**/.env.*
+**/secrets*
+
+**/*.bak.*
+**/.bak
+
+
+.DS_Store
+.vscode/
 *.swp
