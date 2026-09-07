@@ -5,14 +5,15 @@ ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 ln -sf ~/.dotfiles/.config/nvim ~/.config/nvim 
 
 
-
+# custom scripts
+sudo chmod +x wake-nyx.sh
 
 # custom repositories
 sudo add-apt-repository ppa:ondrej/php
 sudo add-apt-repository ppa:phoerious/keepassxc
 
 sudo apt-get update
-sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard keepassxc imagemagick vim-nox python3-dev deja-dup libnotify-bin v4l-utils guvcview xclip
+sudo apt-get install -y python3 curl wget software-properties-common ansible vim vim-gtk3 git ripgrep build-essential cmake wireguard keepassxc imagemagick vim-nox python3-dev deja-dup libnotify-bin v4l-utils guvcview wl-clipboard wakeonlan
 
 #nerd fonts
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.3/FiraCode.zip
