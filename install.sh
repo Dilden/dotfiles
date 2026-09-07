@@ -64,10 +64,3 @@ sudo chgrp docker /usr/local/bin/docker-compose
 sudo chmod 750 /usr/local/bin/docker-compose
 newgrp docker
 
-
-# AI tooling
-
-curl -fsSL https://omp.sh/install
-
-ln -sf ~/.dotfiles/.config/opencode ~/.config/opencode 
-ln -sf ~/.dotfiles/.config/omp/agent/config.yml ~/.omp/agent/config.yml 
