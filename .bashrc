@@ -144,12 +144,5 @@ fi
 ###-tns-completion-end-###
 . "$HOME/.cargo/env"
 
-if [ "$(hostname)" = "nyx" ]; then
-    export OPENCODE_CONFIG_DIR=~/.dotfiles/.config/.opencode/nyx/
-    export OLLAMA_BASE_URL=http://127.0.0.1:11434
-else
-    export OPENCODE_CONFIG_DIR=~/.dotfiles/.config/.opencode/
-    export OLLAMA_BASE_URL=http://192.168.1.81:11434
-fi
 
 export SBX_NO_TELEMETRY=1
