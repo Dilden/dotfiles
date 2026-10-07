@@ -1,5 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-NYX_IP=192.168.1.81
+NYX_IP=nyx.closingtags
 NYX_MAC=58:11:22:2d:f0:96
 
 ## wake the titaness from her slumber
